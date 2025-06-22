@@ -32,6 +32,6 @@ Search for "Jurdns Iterative Noise KSampler" in ComfyUI Manager and install.
 ### Manual Installation
 ```bash
 cd /path/to/ComfyUI/custom_nodes/
-git clone [https://github.com/jurdnf/ComfyUI-JurdnsIterativeNoiseKSampler.git]
+git clone https://github.com/jurdnf/ComfyUI-JurdnsIterativeNoiseKSampler.git
 ```
 Then restart ComfyUI.
