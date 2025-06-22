@@ -1,0 +1,14 @@
+[project]
+name = "ComfyUI-JurdnsIterativeNoiseKsampler"
+description = "A ComfyUI custom node that adds controlled noise injection during the sampling process for enhanced image generation quality and detail."
+version = "1.0.0"
+license = { file = "LICENSE.txt" }
+
+[project.urls]
+Repository = "https://github.com/jurdnf/ComfyUI-JurdnsIterativeNoiseKSampler.git"
+
+
+[tool.comfy]
+PublisherId = "iamjurdn"
+DisplayName = "ComfyUI-JurdnsIterativeNoiseKsampler"
+includes = []
