@@ -39,6 +39,7 @@ class KSamplerWithIterativeNoise:
         sigmas = comfy.samplers.calculate_sigmas(model.get_model_object("model_sampling"), scheduler, steps).to(device)
         
         def iterative_noise_callback(step, x0, x, total_steps):
+            comfy.model_management.throw_exception_if_processing_interrupted()
             if step > 0 and (step % add_noise_every_n_steps == 0):
                 progress = step / (total_steps - 1) if total_steps > 1 else 1.0
                 current_noise_strength = start_noise_strength + (end_noise_strength - start_noise_strength) * progress
